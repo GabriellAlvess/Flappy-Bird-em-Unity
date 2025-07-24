@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public float bgSpeed = 1f;
+
+    public float obstacleSpeed = 1f;
+
+    public void GameOver()
     {
-        
+        bgSpeed = 0f;
+        obstacleSpeed = 0f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
